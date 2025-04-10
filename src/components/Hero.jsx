@@ -11,9 +11,9 @@ function Hero({
   primaryButton,
   secondaryButton,
   extraSections = [],
-  mainImageHeight = "auto",
+  mainImageHeight = "600px",
   withShadow = true,
-  verticalPadding = "py-16 lg:py-24" // Nuova prop per gestire padding verticale
+  verticalPadding = "py-16 lg:py-24"
 }) {
   return (
     <div className={`w-full flex items-center bg-cover bg-center bg-no-repeat ${verticalPadding}`}>
@@ -54,7 +54,7 @@ function Hero({
             )}
 
             {extraSections.length > 0 && (
-              <div className="space-y-4">
+              <div className="space-y-4 mt-6">
                 {extraSections.map((section, index) => (
                   <div
                     key={index}
@@ -82,8 +82,9 @@ function Hero({
             <img
               src={imageUrl}
               alt={imageAlt}
-              style={{ height: mainImageHeight || 'auto' }}
-              className={`w-full object-contain rounded-xl ${withShadow ? 'drop-shadow-[0_10px_15px_rgba(0,0,0,0.2)]' : ''}`}
+              className={`w-full h-auto md:h-[${mainImageHeight}] object-contain rounded-xl ${
+                withShadow ? 'drop-shadow-[0_10px_15px_rgba(0,0,0,0.2)]' : ''
+              }`}
             />
           </div>
 
