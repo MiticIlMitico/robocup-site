@@ -1,0 +1,23 @@
+# Dipendenze
+node_modules/
+
+# Cartelle di build
+dist/
+build/
+
+# Cache e log
+.cache/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# File sistema
+.DS_Store
+
+# Variabili ambiente
+.env
+.env.*.local
+
+# VS Code settings locali
+.vscode/
