@@ -55,7 +55,7 @@ export default function VideoBackground() {
 
             <p className="text-lg md:text-xl text-white mb-4 leading-relaxed font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] text-shadow">
               Ciao, siamo i Madagabot e abbiamo replicato la scena iconica di Re Julien,
-              ma in versione <span className="font-bold">dark techno</span>
+              ma in versione <span className="font-bold">robotica</span>
             </p>
 
             {/* Bottone con immagini laterali */}

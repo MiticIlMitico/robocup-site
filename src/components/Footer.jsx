@@ -9,7 +9,7 @@ const Footer = () => {
       <div>
       <img src="/madagabot.png" class="mr-5 h-6 sm:h-9" alt="logo" />
         <p class="max-w-xs mt-4 text-sm text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
+          Madagascar ma come non l'avete mai visto, in versione robotica
         </p>
         <div class="flex mt-8 space-x-6 text-gray-600">
           <a class="hover:opacity-75" href target="_blank" rel="noreferrer">

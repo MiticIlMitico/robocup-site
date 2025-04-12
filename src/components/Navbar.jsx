@@ -23,11 +23,10 @@ const Navbar = () => {
   }, [isVisible]);
 
   const navLinks = [
-    { label: 'Home', href: '/#home' },
-    { label: 'Progetto', href: '/#progetto' },
-    { label: 'Team', href: '/#team' },
-    { label: 'RoboCup', href: '/#robocup' },
-    { label: 'Contatti', href: '/#contatti' },
+    { label: 'Home', href: '#home' },
+    { label: 'Progetto', href: '#project-section' },
+    { label: 'Team', href: '#team' },
+    { label: 'Contatti', href: '#contatti' },
   ];
 
   return (

@@ -8,31 +8,30 @@ import ChiSiamo from './pages/ChiSiamo';
 import GalleryCircuiti from './components/GalleryCircuiti';
 
 function App() {
-  return (<>
+  return (
+    <>
+    <div id="home">
       <CentralHome />
-      <div id="project-section">
-        <Project />
-      </div>
-      <FadeInOnScroll>
+    </div>
+
+    <div id="project-section">
+      <Project />
+    </div>
+    
+    <div id="team">
       <ChiSiamo />
-</FadeInOnScroll>
-      <FadeInOnScroll>
-        <GalleryCircuiti
-          images={[
-            "/circuito-re-julien.png",
-            "/circuito-alex.png",
-            "/circuito-pinguini.png",
-            "/wiring-arduino.png"
-          ]}
-          height="h-64" // oppure "h-48", "h-80" se vuoi variarlo
-        />
-      </FadeInOnScroll>
-      
-        <Team />
-        
+    </div>
+    
+    <div>
+      <Team />
+    </div>
+
+    <div id="contatti">
       <Footer />
+    </div>
   </>
   );
 }
 
 export default App;
+

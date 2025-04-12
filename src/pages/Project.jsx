@@ -77,63 +77,65 @@ function Team() {
 
 
 
-<FadeInOnScroll>
+      <FadeInOnScroll>
+  <Hero
+    title='I Pinguini'
+    description="I pinguini di Madagascar, realizzati con LEGO Spike e programmati in MicroPython, si muovono in sincronia come una squadra militare. Usano sensori di distanza per coordinarsi durante la sfilata e riconoscersi tra loro."
+    imageUrl="pinguini.png"
+    imageAlt="Team RoboCup"
+    imageRight={true}
+    showButtons={false}
+    showDescription={true}
+    mainImageHeight='600px'
+    withShadow={false} 
+    extraSections={[
+      { 
+        image: "/bluetooth.png", 
+        text: "Motori usati per il movimento delle pinne", 
+        imageHeight: "50px" 
+      },
+      { 
+        image: "/gyro.png", 
+        text: "Movimento sincronizzato grazie all'uso del giroscopio", 
+        imageHeight: "50px",
+        padding: "0.5rem",
+        margin: "0.5rem 0",
+      },
+      { 
+        image: "/distance-sensor.png", 
+        text: "Sensori di distanza per il riconoscimento reciproco", 
+        imageHeight: "50px",
+        padding: "0.5rem",
+        margin: "0.5rem 0",
+      },
+    ]}
+  />
+</FadeInOnScroll>
 
-        <Hero
-        title='I pinguini'
-        description="Questo invece è Alex il Leone, realizzato con pico2, sensori di distanza. Riesce ad effettuare movimenti precisi e riconosce Re Julien tramite il suo sensore, il quale riconosce i riflessi"
-        imageUrl="pinguini.png"
-        imageAlt="Team RoboCup"
-        imageRight={true}
-        showButtons={false}
-        showDescription={true}
-        mainImageHeight='600px'
-        withShadow={false} 
-        extraSections={[
-          { 
-            image: "/icon1.png", 
-            text: "Interamente realizzato in polistirolo", 
-            imageHeight: "60px" 
-          },
-          { image: "/servo.png", 
-            text: "Movimento delle braccia tramite servo", 
-            imageHeight: "50px",
-            padding: "0.5rem",
-            margin: "0.5rem 0",
-          },
-          { image: "/infrared-sensor.png", 
-            text: "Uso del sensore di distanza per riconoscere Re Julien", 
-            imageHeight: "50px",
-            padding: "0.5rem",
-            margin: "0.5rem 0",
-          },
-        ]}
-      />
-        </FadeInOnScroll>
 
       
 
 
 
-      <FadeInOnScroll>
+<FadeInOnScroll>
+  <DoubleFeature
+    items={[
+      {
+        title: 'Liana con Scimmia',
+        description: 'Una liana motorizzata controllata via Bluetooth, che attiva la discesa della scimmia in scena al momento giusto.',
+        imageUrl: 'liana.png',
+        imageAlt: 'Liana con Scimmia'
+      },
+      {
+        title: 'Effetti LED Bluetooth',
+        description: 'Un set di LED RGB controllati da Arduino che si attivano durante lo show tramite comandi Bluetooth per arricchire la scena.',
+        imageUrl: 'led.png',
+        imageAlt: 'LED RGB'
+      }
+    ]}
+  />
+</FadeInOnScroll>
 
-<DoubleFeature
-  items={[
-    {
-      title: 'Liana con Scimmia',
-      description: 'Due pinguini con giroscopio e Bluetooth che sfilano come militari.',
-      imageUrl: 'liana.png',
-      imageAlt: 'Pinguino Kowalski'
-    },
-    {
-      title: 'Led con Bluetotth',
-      description: 'Riconoscimento tramite sensore di colore tra i robot e reazione automatica.',
-      imageUrl: 'led.png',
-      imageAlt: 'Pinguino Rico'
-    }
-  ]}
-/>
-        </FadeInOnScroll>
 
 
       {/* 
